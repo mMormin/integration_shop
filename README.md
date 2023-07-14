@@ -6,11 +6,11 @@ Boutique de figurines
 
 Votre objectif est de réaliser cette intégration en utilisant flexbox, des balises sémantiques et des class CSS 
 
-![resultat](ressources/resultat.png)
+![resultat](_ressources/resultat-exploration.png)
 
 Les images se trouvent dans le dossier `images/` du projet
 
-Les textes sont dans le dossier des ressources : `ressources/textes.txt`
+Les textes sont dans le dossier des ressources : `_ressources/textes.txt`
 
 
 ## Charte
@@ -34,5 +34,5 @@ Couleurs :
 
 Vous pouvez envisager de compléter l'intégration avec tous les contenus proposés
 
-![resultat](ressources/resultat-complet.png)
+![resultat](_ressources/resultat-complet.png)
 </details>
