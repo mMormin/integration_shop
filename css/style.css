@@ -137,6 +137,7 @@ img {
 }
 
 .fig-container {
+    position: relative;
     border: 2px solid #ccc;
     margin-bottom: 2rem;
     padding: 1rem;
@@ -144,12 +145,14 @@ img {
     flex-direction: column;
     cursor: pointer;
     max-width: 380px;
+    transition: all 0.3s ease-in;
 }
 
 .fig-container:hover {
     background-color: #c80000;
     border: 2px solid #c80000;
     box-shadow: 0 8px 8px -4px grey;
+    transition: all 0.2s ease-in;
 }
 
 .fig-container:hover .opus {
@@ -160,6 +163,8 @@ img {
 .fig-container:hover .button {
     background-color: white;
     color: #c80000;
+    transition: all 0.1s ease-in;
+    font-weight: bold;
 }
 
 .fig-container img {
@@ -179,7 +184,8 @@ img {
 }
 
 .fig-container p{
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.2rem;
 }
 
 .button {
@@ -187,6 +193,7 @@ img {
     padding: 1rem;
     color: white;
     line-height: 1.2rem;
+    transition: all 0.3s ease-in;
 }
 
 .price-container {
@@ -201,6 +208,47 @@ img {
 
 .old-price {
     text-decoration: line-through;
+}
+
+.discount {
+    position: absolute;
+    background: grey;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 5px solid lightgray;
+    text-align: center;
+    right: 2rem;
+    top: 1.5rem;
+}
+
+.discount span {
+    display: inline-block;
+    margin-top: 23px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cta {
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    background-color: #c80000;
+    writing-mode: vertical-lr;
+    padding: 0.5rem 0.4rem;
+    border-top-right-radius: 10px;
+    line-height: 0.8rem;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.cta span {
+    text-orientation: upright;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+    line-height: 0.8rem;
 }
 
 footer {
