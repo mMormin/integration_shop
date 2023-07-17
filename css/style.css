@@ -68,6 +68,7 @@ input, button {
 }
 img {
     display: block;
+    max-width: 100%;
 }
 
 
@@ -81,62 +82,79 @@ body {
 }
 
 /* HEADER */
-header.header {
+.header {
     background-color: #c80000;
     width: 100%;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 420;
+    box-shadow: 0 3px 8px -4px rgb(80, 80, 80);
 }
 
-.header__title, .figs-headband__title {
+.header__title, .headband__title {
     color: white;
 }
 
 .header__title {
-    font-size: 1.5em;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-}
-
-.header__title-name {
-    font-size: 3em;
-    padding-right: 20px;
+    font-size: 3rem;
     cursor: pointer;
 }
 
+.header__subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
 /* MAIN */
+.main {
+    flex-grow: 1;
+}
+
 .aside {
     position: fixed;
     left: 0;
     top: 50vh;
     background-color: #c80000;
     word-wrap: break-word;
-    padding: 0.5rem 0.4rem;
-    border-radius: 0 10px 0 10px;
+    transform: translate(0, -50%);
+    writing-mode: vertical-lr;
+    padding: 0.5rem 1rem 0.5rem 0.8rem;
+    border-radius: 0 10px 10px 0;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
+    text-orientation: upright;
 }
 
-.figs-headband {
+.aside:hover {
+    padding: 0.5rem 1rem 0.5rem 4rem;
+    box-shadow: 0 8px 8px -4px grey;
+}
+
+.headband {
     background-color: #666;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
-.figs-headband__title {
+.headband__title {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.5rem;
 }
 
-.figs-headband__theme {
-    font-size: 1.2em;
+.headband__theme {
+    font-size: 2rem;
     font-style: italic;
     letter-spacing: 1px;
+    text-transform: capitalize;
 }
 
 /* FIGURINES VIEW */
 .figs {
-    width: 95%;
+    width: 90vw;
     margin: 0 auto;
     justify-content: space-evenly;
     display: flex;
@@ -153,47 +171,40 @@ header.header {
     flex-direction: column;
     cursor: pointer;
     max-width: 380px;
-    transition: all 0.3s ease-in;
 }
 
 .fig:hover {
     background-color: #c80000;
     border: 2px solid #c80000;
     box-shadow: 0 8px 8px -4px grey;
-    transition: all 0.2s ease-in;
-}
-
-.fig:hover .fig__opus {
-    border-bottom: 1px solid white;
-    color: white;
-}
-
-.fig:hover .fig__footer {
-    background-color: white;
-    color: #c80000;
-    transition: all 0.1s ease-in;
-    font-weight: bold;
 }
 
 /* FIGURINE HEADER */
-.fig__discount {
+.fig__badge {
     position: absolute;
-    background: grey;
     height: 80px;
     width: 80px;
     border-radius: 100%;
-    border: 5px solid lightgray;
     text-align: center;
     right: 2rem;
     top: 1.5rem;
-}
-
-.fig__discount-value {
-    display: inline-block;
-    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-weight: bold;
     font-size: 22px;
+    z-index: 42;
+}
+
+.fig__badge--promo {
+    background: orange;
+    border: 5px solid lightgray;
+}
+
+.fig__badge--new {
+    background: green;
+    border: 5px solid grey;
 }
 
 .fig__photo {
@@ -207,50 +218,64 @@ header.header {
     color: grey;
     text-transform: uppercase;
     letter-spacing: 4px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid;
     width: 100%;
     padding-bottom: 0.2rem;
 }
 
+.fig:hover .fig__opus {
+    border-bottom: 1px solid;
+    color: white;
+}
+
 .fig__title {
-    font-size: 2em;
+    font-size: 2rem;
     margin: 1rem 0;
     font-weight: bold;
 }
 
 .fig__sub {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 /* FIGURINE FOOTER */
-.fig__footer {
+.fig__add-to-cart {
     background-color: #c80000;
-    padding: 1rem;
+    padding: 16px;
     color: white;
-    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.fig:hover .fig__add-to-cart {
+    background-color: white;
+    color: #c80000;
 }
 
 .fig__cta {
-    font-size: 1.5em;
-}
-
-.fig__prices {
-    display: inline;
-    float: right;
-    font-size: 1.6em;
-}
-
-.fig__price {
-    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .fig__price-old {
     text-decoration: line-through;
+    font-weight: normal;
+    padding-right: 10px;
+}
+
+/* TRANSITIONS */
+.fig, .fig__opus, .fig__add-to-cart, .aside {
+    transition: all 0.3s ease-in;
+}
+
+.fig:hover, .fig:hover .fig__opus .fig:hover .fig__add-to-cart, aside:hover {
+    transition: all 0.2s ease-out;
 }
 
 /* FOOTER */
-footer.footer {
+.footer {
     width: 100%;
     background-color: grey;
     letter-spacing: 1px;
