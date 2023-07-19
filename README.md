@@ -1,11 +1,12 @@
 # oFig
-
-Boutique de figurines
+## _Boutique de figurines_
 <br/>
+
+oFig is a HTML/CSS project. Intégration of many pages with good pratice.
 
 ## Objectifs
 
-**Intégration de pages HTML avec toutes les bonnes pratiques :**
+## Features
 - [x] Semantic
 - [x] BEM
 - [x] reset CSS
@@ -14,9 +15,18 @@ Boutique de figurines
 
 <br/>
 
-**Contenu du repository :**
-- HOME page
-- CART page
+## Directory Content
+- Figurines page
+    > index.html
+
+- Cart page
+    > pages/cart.html
+
 - images
-- style css
+     > img/*
+
+- CSS Style + reset
+     > css/style.css
+
 - local fonts
+     > fonts/poppins*
