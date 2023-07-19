@@ -4,7 +4,7 @@
 
 oFig is a HTML/CSS project. Intégration of many pages with good pratice.
 
-## Objectifs
+<br/>
 
 ## Features
 - [x] Semantic
