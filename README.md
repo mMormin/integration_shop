@@ -10,12 +10,13 @@ Boutique de figurines
 - [x] BEM
 - [x] reset CSS
 - [x] local fonts
+- [x] CSS variables 
 
 <br/>
 
 **Contenu du repository :**
 - HOME page
-- PANIER page
+- CART page
 - images
 - style css
-- fonts
+- local fonts
