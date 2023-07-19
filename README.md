@@ -2,8 +2,21 @@
 
 Boutique de figurines
 
-## Objectif 
+<br/>
 
-Votre objectif est de réaliser cette intégration en utilisant flexbox, des balises sémantiques et des class CSS 
+## Objectifs
 
-![resultat](_ressources/resultat-exploration.png)
+**Intégration de pages HTML avec toutes les bonnes pratiques HTML et CSS**
+- [x] Semantic
+- [x] BEM
+- [x] reset CSS
+- [x] local fonts
+
+<br/>
+
+**Contenu du repository :**
+- HOME page
+- PANIER page
+- images
+- style css
+- fonts
