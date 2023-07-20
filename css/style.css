@@ -17,7 +17,7 @@
   
   --font-bold: 700;
 
-  --gutter: 3rem;
+  --gutter-big: 3rem;
   --gutter-default: 2rem;
   --gutter-small: 1rem;
   --spacing-small: 1px;
@@ -269,7 +269,7 @@ h4 {
 }
 
 .details__options-title {
-    margin-top: var(--gutter);
+    margin-top: var(--gutter-big);
 }
 
 .label__wrapper {
@@ -311,7 +311,7 @@ h4 {
 }
 
 .section__total, .section__button {
-    padding: var(--gutter) var(--gutter-default);
+    padding: var(--gutter-big) var(--gutter-default);
 }
 
 .total__wrapper {
