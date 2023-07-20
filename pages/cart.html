@@ -40,95 +40,96 @@
       <section class="shipment">
         <h3 class="shipment__title">Préférences de livraison</h3>
 
-        <form class="shipment__form">
-          <div class="form__details">
-            <section class="details__address">
-              <h4 class="form__title details__address-title">
-                Ou souhaitez-vous être livré ?
+        <form class="form" action="">
+          <section class="shipment__form">
+            <div class="form__details">
+              <section class="details__address">
+                <h4 class="form__title details__address-title">
+                  Ou souhaitez-vous être livré ?
+                </h4>
+                <div class="label__wrapper address__current">
+                  <input
+                    type="radio"
+                    id="current-address"
+                    name="address[]"
+                    checked
+                  />
+                  <label class="address__current-label" for="current-address"
+                    >Mon adresse courante</label
+                  >
+                </div>
+                <div class="label__wrapper address__other">
+                  <input type="radio" id="other-address" name="address[]" />
+                  <label class="address__other-label" for="other-address"
+                    >Autre adresse</label
+                  >
+                </div>
+              </section>
+  
+              <section class="details__options">
+                <h4 class="form__title details__options-title">Options</h4>
+                <div class="label__wrapper options__sms">
+                  <input type="checkbox" id="sms" name="sms" checked disabled />
+                  <label class="options__sms-label" for="sms"
+                    >Suivi de livraison par sms (inclus)</label
+                  >
+                </div>
+                <div class="label__wrapper options__saorre">
+                  <input type="checkbox" id="saorre" name="saorre" />
+                  <label class="options__saorre-label" for="saorre"
+                    >Satisfait ou remboursé (+2 euros)</label
+                  >
+                </div>
+                <div class="label__wrapper options__guarantee">
+                  <input type="checkbox" id="guarantee" name="guarantee" />
+                  <label class="options__guarantee-label" for="guarantee"
+                    >Garantie 2ans (+10 euros)</label
+                  >
+                </div>
+              </section>
+            </div>
+  
+            <div class="form__address">
+              <h4 class="form__title infos__address-title">Adresse</h4>
+  
+              <div class="label__wrapper label__wrapper--duo address__street">
+                <label for="street">Rue</label>
+                <input type="text" id="street" name="street" />
+              </div>
+  
+              <div class="label__wrapper label__wrapper--duo address__zipcode">
+                <label for="zipcode">Code postal</label>
+                <input type="text" id="zipcode" name="zipcode" />
+              </div>
+  
+              <div class="label__wrapper label__wrapper--duo address__zipcode">
+                <label for="city">Ville</label>
+                <input type="text" id="city" name="city" />
+              </div>
+  
+              <h4 class="form__title infos__more-title">
+                Informations complémentaires
               </h4>
-              <div class="label__wrapper address__current">
-                <input
-                  type="radio"
-                  id="current-address"
-                  name="address[]"
-                  checked
-                />
-                <label class="address__current-label" for="current-address"
-                  >Mon adresse courante</label
-                >
+  
+              <div class="label__wrapper label__wrapper--duo address__more">
+                <label for="more">interphone, bâtiment, etc.</label>
+                <textarea name="more" id="more" cols="25" rows="5"></textarea>
               </div>
-              <div class="label__wrapper address__other">
-                <input type="radio" id="other-address" name="address[]" />
-                <label class="address__other-label" for="other-address"
-                  >Autre adresse</label
-                >
-              </div>
-            </section>
-
-            <section class="details__options">
-              <h4 class="form__title details__options-title">Options</h4>
-              <div class="label__wrapper options__sms">
-                <input type="checkbox" id="sms" name="sms" checked disabled />
-                <label class="options__sms-label" for="sms"
-                  >Suivi de livraison par sms (inclus)</label
-                >
-              </div>
-              <div class="label__wrapper options__saorre">
-                <input type="checkbox" id="saorre" name="saorre" />
-                <label class="options__saorre-label" for="saorre"
-                  >Satisfait ou remboursé (+2 euros)</label
-                >
-              </div>
-              <div class="label__wrapper options__guarantee">
-                <input type="checkbox" id="guarantee" name="guarantee" />
-                <label class="options__guarantee-label" for="guarantee"
-                  >Garantie 2ans (+10 euros)</label
-                >
-              </div>
-            </section>
-          </div>
-
-          <div class="form__address">
-            <h4 class="form__title infos__address-title">Adresse</h4>
-
-            <div class="label__wrapper label__wrapper--duo address__street">
-              <label for="street">Rue</label>
-              <input type="text" id="street" name="street" />
             </div>
+          </section>
 
-            <div class="label__wrapper label__wrapper--duo address__zipcode">
-              <label for="zipcode">Code postal</label>
-              <input type="text" id="zipcode" name="zipcode" />
+          <section class="shipment__total">
+            <div class="total__wrapper">
+              <p class="total__title">Montant total à régler :</p>
+              <span class="total__price">197 €</span>
             </div>
-
-            <div class="label__wrapper label__wrapper--duo address__zipcode">
-              <label for="city">Ville</label>
-              <input type="text" id="city" name="city" />
-            </div>
-
-            <h4 class="form__title infos__more-title">
-              Informations complémentaires
-            </h4>
-
-            <div class="label__wrapper label__wrapper--duo address__more">
-              <label for="more">interphone, bâtiment, etc.</label>
-              <textarea name="more" id="more" cols="25" rows="5"></textarea>
-            </div>
-          </div>
+          </section>
+  
+          <section class="shipment__buttons">
+            <button class="button button--default">Continuer vos achats</button>
+            <button type="submit" class="button button--cta ">Valider et payer</button>
+          </section>
         </form>
-
-        <section class="shipment__total">
-          <div class="total__wrapper">
-            <p class="total__title">Montant total à régler :</p>
-            <span class="total__price">197 €</span>
-          </div>
-        </section>
-
-        <section class="shipment__buttons">
-          <button class="button button--default">Continuer vos achats</button>
-
-          <button type="submit" class="button button--cta ">Valider et payer</button>
-        </section>
       </section>
     </main>
 

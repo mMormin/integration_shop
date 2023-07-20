@@ -13,10 +13,12 @@
   --font-sans: 'Poppins', sans-serif;
   --font-size-tiny: 1.5rem;
   --font-size-default: 1.6rem;
+  --font-size-bigger:2rem;
   
   --font-bold: 700;
 
   --gutter: 3rem;
+  --gutter-default: 2rem;
   --gutter-small: 1rem;
   --spacing-small: 1px;
 }
@@ -95,7 +97,6 @@ img {
 }
 
 /*---------------------- STYLES ------------------------*/
-
 /* GLOBAL */
 body {
     font-family: var(--font-sans);
@@ -108,14 +109,14 @@ p, label, input {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: var(--font-size-bigger);
     font-weight: var(--font-bold);
 }
 
 h4 {
     color: var(--color-grey);
     font-weight: var(--font-bold);
-    font-size: 2rem;
+    font-size: var(--font-size-bigger);
 }
 
 /* HEADER */
@@ -226,7 +227,7 @@ h4 {
 }
 
 .headband__focus {
-    font-size: 2rem;
+    font-size: var(--font-size-bigger);
     font-style: italic;
     font-weight: var(--font-bold);
     padding-left: 5px;
@@ -252,11 +253,7 @@ h4 {
 
 .shipment__form {
     display: flex;
-    margin-bottom: 4rem;
-}
-
-.form, .shipment__total {
-    padding: 6rem 2rem;
+    margin-bottom: var(--gutter-default);
 }
 
 .form__details {
@@ -268,7 +265,7 @@ h4 {
 }
 
 .form__title {
-    margin-bottom: 2rem;
+    margin-bottom: var(--gutter-default);
 }
 
 .details__options-title {
@@ -309,12 +306,12 @@ h4 {
 }
 
 .total__title {
-    font-size: 2rem;
+    font-size: var(--font-size-bigger);
     font-weight: var(--font-bold);
 }
 
 .shipment__total, .shipment__buttons {
-    padding: var(--gutter) 2rem;
+    padding: var(--gutter) var(--gutter-default);
 }
 
 .total__wrapper {
@@ -359,7 +356,6 @@ h4 {
 
 .button--default:hover {
     background-color: #dfdfdf;
-
 }
 
 .button--cta {
@@ -381,13 +377,13 @@ h4 {
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    padding: var(--gutter-default) 0;
 }
 
 .fig {
     position: relative;
     border: 2px solid var(--color-lightgrey);
-    margin-bottom: 2rem;
+    margin-bottom: var(--gutter-default);
     padding: var(--gutter-small);
     display: flex;
     flex-direction: column;
@@ -409,7 +405,7 @@ h4 {
     width: 80px;
     border-radius: 100%;
     text-align: center;
-    right: 2rem;
+    right: var(--gutter-default);
     top: 1.5rem;
     display: flex;
     justify-content: center;
@@ -487,11 +483,13 @@ h4 {
 }
 
 /* TRANSITIONS */
-.nav__link, .fig, .fig__opus, .fig__add-to-cart, .aside {
+.nav__link, .fig, .fig__opus, .fig__add-to-cart, .aside, .label__wrapper--duo input, .label__wrapper--duo textarea, .button--default, .button--cta {
     transition: all 0.3s ease-in;
 }
 
-.nav__link:hover, .fig:hover, .fig:hover .fig__opus .fig:hover .fig__add-to-cart, aside:hover {
+.nav__link:hover, .fig:hover, .fig:hover .fig__opus .fig:hover .fig__add-to-cart, aside:hover,
+.label__wrapper--duo input:hover, .label__wrapper--duo textarea:hover, .button--default:hover,
+.button--cta:hover {
     transition: all 0.2s ease-out;
 }
 
