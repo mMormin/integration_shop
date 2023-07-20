@@ -91,6 +91,9 @@ h1,h2,h3 {
 input, button {
     outline: 0;
 }
+select, input, textarea, button {
+    font: inherit;
+}
 img {
     display: block;
     max-width: 100%;
@@ -113,7 +116,7 @@ h3 {
     font-weight: var(--font-bold);
 }
 
-h4 {
+legend {
     color: var(--color-grey);
     font-weight: var(--font-bold);
     font-size: var(--font-size-bigger);
@@ -268,7 +271,7 @@ h4 {
     margin-bottom: var(--gutter-default);
 }
 
-.details__options-title {
+.details__options, .infos__more {
     margin-top: var(--gutter-big);
 }
 
@@ -276,33 +279,27 @@ h4 {
     margin-top: var(--gutter-small);
 }
 
-.label__wrapper--duo label, .label__wrapper--duo input, .label__wrapper--duo textarea {
+.label__wrapper--duo label, .label__wrapper--duo input, .address__more-textarea {
     width: 100%;
 }
 
-.label__wrapper--duo input, .label__wrapper--duo textarea {
-    border: 1px solid #ebebeb;
-    border-bottom: 1px solid var(--color-grey);
-    background-color: #f3f3f3;
+.address__more-textarea {
+    resize: vertical;
 }
 
-.label__wrapper--duo input, .label__wrapper--duo textarea {
-    margin: var(--gutter-small) 0 1.5rem 0;
-    padding: 12px 20px;
+.label__wrapper--duo input, .address__more-textarea {
     border: 1px solid #ebebeb;
     border-bottom: 1px solid var(--color-grey);
     background-color: #f3f3f3;
+    margin: var(--gutter-small) 0 1.5rem 0;
+    padding: 12px 20px;
 }
 
 .label__wrapper--duo input:hover, .label__wrapper--duo input:active, .label__wrapper--duo input:focus, .label__wrapper--duo input:focus-visible
-.label__wrapper--duo textarea:hover, .label__wrapper--duo textarea:active, .label__wrapper--duo textarea:focus, .label__wrapper--duo textarea:focus-visible {
+.address__more-textarea:hover, .address__more-textarea:active, .address__more-textarea:focus, .address__more-textarea:focus-visible {
     border-bottom: 1px solid var(--color-red);
     outline-offset: 0;
     outline: inherit;
-}
-
-.infos__more-title {
-    margin-top: 4rem;
 }
 
 .total__title {
