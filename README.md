@@ -2,7 +2,7 @@
 ## _Boutique de figurines_
 <br/>
 
-oFig is a HTML/CSS project. Intégration of many pages with good pratice.
+oFig is a HTML/CSS project. HTML5 pages integration with good pratice.
 
 <br/>
 
