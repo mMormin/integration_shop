@@ -11,7 +11,8 @@ oFig is a HTML/CSS project. Intégration of many pages with good pratice.
 - [x] BEM
 - [x] reset CSS
 - [x] local fonts
-- [x] CSS variables 
+- [x] CSS variables
+- [x] Desktop First responsive
 
 <br/>
 
