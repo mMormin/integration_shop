@@ -1,8 +1,9 @@
-# oFig
-## _Boutique de figurines_
+# oFig - _Boutique de figurines_
+## O'clock Formation
 <br/>
 
-oFig is a HTML/CSS project. HTML5 pages integration with good pratice.
+oFig is a pure HTML5 and CSS3 project. HTML5 pages integration with good pratice.<br/>
+E-commerce like website that _sell_ figurines.<br/>No js. Only the esthetic.<br/><3
 
 <br/>
 
