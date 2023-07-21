@@ -3,7 +3,7 @@
 <br/>
 
 oFig is a pure HTML5 and CSS3 project. HTML5 pages integration with good pratice.<br/>
-E-commerce like website that _sell_ figurines.<br/>No js. Only the esthetic.<br/><3
+Lite E-commerce like website that _sell_ figurines.<br/>No js. Only the esthetic.<br/><3
 
 <br/>
 
